@@ -1,9 +1,8 @@
-import React from 'react'
+import express from 'express'
 
-function server() {
-  return (
-    <div>server</div>
-  )
-}
+const app = express();
+const PORT = 5000;
 
-export default server
+app.listen(PORT, () => {
+    console.log(`server started at port ${PORT}`)
+})

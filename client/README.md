@@ -1,3 +1,6 @@
+## THIS IS A FULL STACK QUIZ APPLICATION DEVELOPED USING REACT JS , EXPRESS JS , MONGO DB AND BASIC CSS
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

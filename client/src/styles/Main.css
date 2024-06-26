@@ -1,0 +1,115 @@
+/* General styles */
+.container ol li {
+    font-size: 1.4em;
+    color: #cecece;
+}
+
+/* Styles for the .start section */
+.start {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.start .btn {
+    padding: 0.2em 1.7em;
+    border: none;
+    border-radius: 0.1em;
+    font-size: 1.2em;
+    color: #202020;
+    text-decoration: none;
+    background-color: #faff5a;
+}
+
+/* Styles for the form section */
+#form {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+#form .userid {
+    padding: 0.7em 2em;
+    width: 100%;
+    max-width: 400px; /* Limit maximum width */
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+/* Media Queries */
+
+/* For small devices (portrait tablets and large phones, 600px and below) */
+@media (max-width: 600px) {
+    .container ol li {
+        font-size: 1.2em;
+    }
+
+    .start {
+        flex-direction: column;
+        padding-top: 1em;
+    }
+
+    .start .btn {
+        font-size: 1em;
+        padding: 0.5em 1.5em;
+    }
+
+    #form {
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    #form .userid {
+        width: 80%; /* Adjust width for smaller screens */
+        max-width: none;
+    }
+}
+
+/* For medium devices (landscape tablets, 768px and below) */
+@media (max-width: 768px) {
+    .container ol li {
+        font-size: 1.3em;
+    }
+
+    .start .btn {
+        font-size: 1.1em;
+        padding: 0.4em 1.6em;
+    }
+
+    #form .userid {
+        width: 70%;
+    }
+}
+
+/* For large devices (laptops/desktops, 1024px and below) */
+@media (max-width: 1024px) {
+    .container ol li {
+        font-size: 1.4em;
+    }
+
+    .start .btn {
+        font-size: 1.2em;
+        padding: 0.2em 1.7em;
+    }
+
+    #form .userid {
+        width: 60%;
+    }
+}
+
+/* For very large devices (large desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    .container ol li {
+        font-size: 1.5em;
+    }
+
+    .start .btn {
+        font-size: 1.3em;
+        padding: 0.3em 1.8em;
+    }
+
+    #form .userid {
+        width: 50%;
+    }
+}

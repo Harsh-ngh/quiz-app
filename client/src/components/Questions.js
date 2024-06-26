@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 
-/** Custom Hook */
 import { useFetchQestion } from '../hooks/FetchQuestion'
 import { updateResult } from '../hooks/setResult'
 

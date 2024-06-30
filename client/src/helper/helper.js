@@ -21,15 +21,25 @@ export function CheckUserExist({ children }){
     return auth ? children : <Navigate to={'/'} replace={true}></Navigate>
 }
 
-/** get server data */
-export async function getServerData(url, callback){
-    const data = await (await axios.get(url))?.data;
-    return callback ? callback(data) : data;
+export async function getServerData(url,callback) {
+    try {
+        const response = await axios.get(url);
+        const data = response.data;
+        return callback ? callback(data) : data;
+    } catch (error) {
+        console.error("Error fetching server data:", error);
+        return error;
+    }
 }
 
 
-/** post server data */
-export async function postServerData(url, result, callback){
-    const data = await (await axios.post(url, result))?.data;
-    return callback ? callback(data) : data;
+export async function postServerData(url, result, callback) {
+    try {
+        const response = await axios.post(url, result);
+        const data = response.data;
+        return callback ? callback(data) : data;
+    } catch (error) {
+        console.error("Error posting server data:", error);
+        return error;
+    }
 }

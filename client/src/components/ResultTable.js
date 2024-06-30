@@ -16,10 +16,10 @@ export default function ResultTable() {
             <table>
                 <thead className='table-header'>
                     <tr className='table-row'>
-                        <td>Name</td>
-                        <td>Attempts</td>
-                        <td>Earn Points</td>
-                        <td>Result</td>
+                        <th>Name</th>
+                        <th>Attempts</th>
+                        <th>Earn Points</th>
+                        <th>Result</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,7 +33,7 @@ export default function ResultTable() {
                                 <td>{v?.username || ''}</td>
                                 <td>{v?.attempts || 0}</td>
                                 <td>{v?.points || 0}</td>
-                                <td>{v?.achived || ""}</td>
+                                <td>{v?.achieved === "Passed" ? "Passed" : "Failed"}</td>
                             </tr>
                         ))
                     )}
